@@ -1,16 +1,17 @@
-## Hi there 👋
+I’m a developer from India
 
-<!--
-**msmadhav-dev/msmadhav-dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Where design meets code
 
-Here are some ideas to get you started:
+Building full stack web applications with
+javascript • typescript • react • node • express
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Diving into python and flask for ai-powered apps.
+
+Worked on map environment development
+for simulation games like ets2.
+
+Exploring unity, blender and c# for game development.
+
+Passionate about design, ui/ux and building clean interfaces.
+
+Always learning and building new things 🚀
