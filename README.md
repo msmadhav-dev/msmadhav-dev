@@ -4,16 +4,13 @@
   ----------------------------------------------------------------------------
   Repo must be named exactly:  msmadhav-dev/msmadhav-dev  (public)
 
-  The header is raw ASCII text inside a fenced code block — no image, no SVG,
-  no external request. Because it is text, it cannot animate: GitHub strips
-  <style> and <script>, so there is no way to move characters that are part of
-  the markdown itself. Animation is only possible inside an SVG.
+  The header is an animated SVG at assets/madhav.svg — the ASCII types itself
+  out row by row. It has to be an SVG: GitHub strips <style> and <script> from
+  markdown, so ASCII written directly in the README can never animate.
 
-  Do NOT reformat the code block. The six rows are exactly 57 characters each
-  and the block letters only line up if the spacing is left untouched.
-
-  You can delete assets/madhav.svg and scripts/generate_banner.py — nothing
-  here references them any more.
+  Regenerate it with:  python3 scripts/generate_banner.py   (stdlib only)
+  After regenerating, bump ?v=1 to ?v=2 on the <img> src below — GitHub's
+  image proxy caches hard and will keep serving the old frame otherwise.
 
   TODO before publishing:
     - Add an email badge in the header + Connect section if you want one.
@@ -22,20 +19,11 @@
   ============================================================================
 -->
 
-```
-msmadhav-dev@github:~$ whoami
-
-███╗   ███╗  █████╗  ██████╗  ██╗  ██╗  █████╗  ██╗   ██╗
-████╗ ████║ ██╔══██╗ ██╔══██╗ ██║  ██║ ██╔══██╗ ██║   ██║
-██╔████╔██║ ███████║ ██║  ██║ ███████║ ███████║ ██║   ██║
-██║╚██╔╝██║ ██╔══██║ ██║  ██║ ██╔══██║ ██╔══██║ ╚██╗ ██╔╝
-██║ ╚═╝ ██║ ██║  ██║ ██████╔╝ ██║  ██║ ██║  ██║  ╚████╔╝ 
-╚═╝     ╚═╝ ╚═╝  ╚═╝ ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝   ╚═══╝  
-
-full stack developer · ui/ux designer · building ai-powered applications
-```
-
 <div align="center">
+
+<img src="https://raw.githubusercontent.com/msmadhav-dev/msmadhav-dev/main/assets/madhav.svg?v=1" width="100%" alt="MADHAV — full stack developer, UI/UX designer, building AI-powered applications" />
+
+<br />
 
 <img src="https://img.shields.io/badge/Full%20Stack%20Developer-6D28D9?style=for-the-badge&labelColor=0B0A14" alt="Full Stack Developer" />
 <img src="https://img.shields.io/badge/UI%2FUX%20Designer-7C3AED?style=for-the-badge&labelColor=0B0A14" alt="UI/UX Designer" />
@@ -78,30 +66,14 @@ I enjoy solving real-world problems through thoughtful software engineering whil
 
 <div align="center">
 
-**Languages**
+<img src="https://skillicons.dev/icons?i=js,ts,python,c,html,css,tailwind,react,nextjs,threejs,nodejs,express,prisma,postgres,supabase,flutter,git,github,vscode,blender,ps,vercel&perline=8&theme=dark" alt="Tech Stack" />
 
-<img src="https://skillicons.dev/icons?i=js,ts,python,c&theme=dark" alt="Languages" />
-
-**Frontend**
-
-<img src="https://skillicons.dev/icons?i=html,css,tailwind,react,nextjs,threejs&theme=dark" alt="Frontend" />
 <br />
+<br />
+
+<img src="https://img.shields.io/badge/React%20Native-0B0A14?style=for-the-badge&logo=react&logoColor=A78BFA" alt="React Native" />
 <img src="https://img.shields.io/badge/GSAP-0B0A14?style=for-the-badge&logo=greensock&logoColor=A78BFA" alt="GSAP" />
-
-**Backend**
-
-<img src="https://skillicons.dev/icons?i=nodejs,express,prisma&theme=dark" alt="Backend" />
-<br />
 <img src="https://img.shields.io/badge/REST%20APIs-0B0A14?style=for-the-badge&logo=fastapi&logoColor=A78BFA" alt="REST APIs" />
-
-**Database**
-
-<img src="https://skillicons.dev/icons?i=postgres,supabase&theme=dark" alt="Database" />
-
-**Tools**
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode,blender,ps,vercel&theme=dark" alt="Tools" />
-<br />
 <img src="https://img.shields.io/badge/Canva-0B0A14?style=for-the-badge&logo=canva&logoColor=A78BFA" alt="Canva" />
 
 </div>
@@ -160,7 +132,7 @@ The application is structured around a Next.js App Router frontend with server c
 | **Performance** | Server components for catalogue pages, route-level code splitting, image optimization, and indexed product queries |
 | **Scalability** | Domain-separated schema, stateless API routes, and externalized auth/storage for horizontal scaling |
 | **Status** | Active |
-| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
+| **Project Page** | [msmadhav.com](https://www.msmadhav.com/) |
 
 </details>
 
@@ -189,7 +161,7 @@ Destination and experience content is media-heavy by nature, so Cloudinary handl
 | **Performance** | CDN-backed responsive media, lazy-loaded galleries, incremental rendering for content pages |
 | **Scalability** | Normalized relational model for destinations, experiences, and bookings; offloaded media layer |
 | **Status** | Active |
-| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
+| **Project Page** | [msmadhav.com](https://www.msmadhav.com/) |
 
 </details>
 
@@ -218,7 +190,7 @@ The site is optimized around heavy visual content: galleries and gameplay media 
 | **Performance** | Progressive media loading, layout-stable galleries, and static generation for showcase pages |
 | **Scalability** | Modular content sections, decoupled purchase flow, edge-deployed static delivery |
 | **Status** | Live |
-| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
+| **Project Page** | [msmadhav.com](https://www.msmadhav.com/) |
 
 </details>
 
@@ -247,7 +219,7 @@ Analysis runs through Python's own compiler for syntax validation, with Tree-sit
 | **Performance** | Single-parse, multi-pass design with no external inference calls — fully local and deterministic |
 | **Scalability** | Language-agnostic Tree-sitter grammars allow new languages to be added without changing the pipeline |
 | **Status** | Active |
-| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
+| **Project Page** | [msmadhav.com](https://www.msmadhav.com/) |
 
 </details>
 
@@ -276,7 +248,7 @@ A project of this size is fundamentally an asset and consistency problem. Road n
 | **Performance** | Prefab reuse, LOD-conscious asset design, and draw-call-aware environment density |
 | **Scalability** | Sector-based expansion — new regions can be added without reworking existing geography |
 | **Status** | Released · Actively Maintained |
-| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
+| **Project Page** | [msmadhav.com](https://www.msmadhav.com/) |
 
 </details>
 
