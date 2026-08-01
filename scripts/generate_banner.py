@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generate_banner.py — builds assets/madhav.svg
+generate_banner.py — builds assets/banner.svg
 
 A self-contained, self-typing ASCII banner styled to look exactly like a
 GitHub code block. No third-party services, no runtime requests: the animation
@@ -164,8 +164,8 @@ A('</svg>')
 
 svg = "\n".join(out)
 os.makedirs("assets", exist_ok=True)
-with open("assets/madhav.svg", "w", encoding="utf-8") as f:
+with open("assets/banner.svg", "w", encoding="utf-8") as f:
     f.write(svg)
 
-print(f"assets/madhav.svg — {len(svg.encode('utf-8'))/1024:.1f} KB, "
+print(f"assets/banner.svg — {len(svg.encode('utf-8'))/1024:.1f} KB, "
       f"typing finishes at {round(T_TAG + D_TAG, 2)}s")
