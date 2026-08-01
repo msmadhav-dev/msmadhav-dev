@@ -4,28 +4,38 @@
   ----------------------------------------------------------------------------
   Repo must be named exactly:  msmadhav-dev/msmadhav-dev  (public)
 
-  Files:
-    README.md
-    assets/madhav.svg           <- the self-typing banner, committed as-is
-    scripts/generate_banner.py  <- regenerates it; stdlib only, no deps
+  The header is raw ASCII text inside a fenced code block — no image, no SVG,
+  no external request. Because it is text, it cannot animate: GitHub strips
+  <style> and <script>, so there is no way to move characters that are part of
+  the markdown itself. Animation is only possible inside an SVG.
 
-  The banner makes ZERO third-party requests — the animation is SMIL inside
-  the file, which GitHub executes. Scripts and <style> blocks are stripped by
-  GitHub's sanitiser, so everything is presentation attributes.
+  Do NOT reformat the code block. The six rows are exactly 57 characters each
+  and the block letters only line up if the spacing is left untouched.
+
+  You can delete assets/madhav.svg and scripts/generate_banner.py — nothing
+  here references them any more.
 
   TODO before publishing:
     - Add an email badge in the header + Connect section if you want one.
-    - Point the "Repository" rows in Featured Projects at real URLs.
     - For the contribution snake, add .github/workflows/snake.yml (Platane/snk)
       and run it once, or delete that section.
   ============================================================================
 -->
 
+```
+msmadhav-dev@github:~$ whoami
+
+███╗   ███╗  █████╗  ██████╗  ██╗  ██╗  █████╗  ██╗   ██╗
+████╗ ████║ ██╔══██╗ ██╔══██╗ ██║  ██║ ██╔══██╗ ██║   ██║
+██╔████╔██║ ███████║ ██║  ██║ ███████║ ███████║ ██║   ██║
+██║╚██╔╝██║ ██╔══██║ ██║  ██║ ██╔══██║ ██╔══██║ ╚██╗ ██╔╝
+██║ ╚═╝ ██║ ██║  ██║ ██████╔╝ ██║  ██║ ██║  ██║  ╚████╔╝ 
+╚═╝     ╚═╝ ╚═╝  ╚═╝ ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝   ╚═══╝  
+
+full stack developer · ui/ux designer · building ai-powered applications
+```
+
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/msmadhav-dev/msmadhav-dev/main/assets/madhav.svg" width="100%" alt="MADHAV — full stack developer, UI/UX designer, building AI-powered applications" />
-
-<br />
 
 <img src="https://img.shields.io/badge/Full%20Stack%20Developer-6D28D9?style=for-the-badge&labelColor=0B0A14" alt="Full Stack Developer" />
 <img src="https://img.shields.io/badge/UI%2FUX%20Designer-7C3AED?style=for-the-badge&labelColor=0B0A14" alt="UI/UX Designer" />
@@ -55,35 +65,12 @@ I design and build modern digital experiences that combine clean design, smooth 
 
 I enjoy solving real-world problems through thoughtful software engineering while continuously exploring modern technologies across web development, AI engineering, and intelligent developer tooling. I believe great software should not only function flawlessly but also deliver exceptional user experiences.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**Profile**
-
 | | |
 |---|---|
 | **Name** | M. Madhav |
 | **Location** | India |
 | **Portfolio** | [msmadhav.com](https://www.msmadhav.com/) |
-| **Focus** | Full Stack · UI/UX · AI Products |
-
-</td>
-<td width="50%" valign="top">
-
-**Open To**
-
-- Freelance Projects
-- Full Stack Development
-- Web Applications
-- UI/UX Design
-- AI-Powered Products
-- Open Source Collaboration
-- Startup Opportunities
-
-</td>
-</tr>
-</table>
+| **Focus** | Full Stack Development · UI/UX Design · AI-Powered Products |
 
 ---
 
@@ -173,7 +160,7 @@ The application is structured around a Next.js App Router frontend with server c
 | **Performance** | Server components for catalogue pages, route-level code splitting, image optimization, and indexed product queries |
 | **Scalability** | Domain-separated schema, stateless API routes, and externalized auth/storage for horizontal scaling |
 | **Status** | Active |
-| **Repository** | [View Repository](https://github.com/msmadhav-dev) |
+| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
 
 </details>
 
@@ -202,7 +189,7 @@ Destination and experience content is media-heavy by nature, so Cloudinary handl
 | **Performance** | CDN-backed responsive media, lazy-loaded galleries, incremental rendering for content pages |
 | **Scalability** | Normalized relational model for destinations, experiences, and bookings; offloaded media layer |
 | **Status** | Active |
-| **Repository** | [View Repository](https://github.com/msmadhav-dev) |
+| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
 
 </details>
 
@@ -231,7 +218,7 @@ The site is optimized around heavy visual content: galleries and gameplay media 
 | **Performance** | Progressive media loading, layout-stable galleries, and static generation for showcase pages |
 | **Scalability** | Modular content sections, decoupled purchase flow, edge-deployed static delivery |
 | **Status** | Live |
-| **Repository** | [View Repository](https://github.com/msmadhav-dev) |
+| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
 
 </details>
 
@@ -260,7 +247,7 @@ Analysis runs through Python's own compiler for syntax validation, with Tree-sit
 | **Performance** | Single-parse, multi-pass design with no external inference calls — fully local and deterministic |
 | **Scalability** | Language-agnostic Tree-sitter grammars allow new languages to be added without changing the pipeline |
 | **Status** | Active |
-| **Repository** | [View Repository](https://github.com/msmadhav-dev) |
+| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
 
 </details>
 
@@ -289,7 +276,7 @@ A project of this size is fundamentally an asset and consistency problem. Road n
 | **Performance** | Prefab reuse, LOD-conscious asset design, and draw-call-aware environment density |
 | **Scalability** | Sector-based expansion — new regions can be added without reworking existing geography |
 | **Status** | Released · Actively Maintained |
-| **Repository** | [MSM Developers](https://github.com/msmadhav-dev) |
+| **Project Page** | [msmadhav.com/projects](https://www.msmadhav.com/projects) |
 
 </details>
 
@@ -312,83 +299,11 @@ A project of this size is fundamentally an asset and consistency problem. Road n
 
 ---
 
-## Current Focus
-
-```yaml
-name: M. Madhav
-role: Full Stack Developer | UI/UX Designer
-location: India
-portfolio: https://www.msmadhav.com/
-
-learning:
-  - Docker
-  - AI Frameworks
-  - LangChain
-  - LangGraph
-  - Hugging Face
-  - OpenAI APIs
-
-building:
-  - Bioshield Healthcare      # Pharmaceutical commerce platform
-  - NativeMeet                # Cultural travel platform
-  - MSM Developers            # ETS2 community platform
-  - CodePilot                 # Rule-based code analysis engine
-  - CT India Map              # Large-scale ETS2 map modification
-
-exploring:
-  - AI-powered developer tooling
-  - Agentic workflows and orchestration
-  - 3D and motion-driven web experiences
-  - Scalable full-stack architecture
-
-open_to:
-  - Freelance Projects
-  - Full Stack Development
-  - Web Applications
-  - UI/UX Design
-  - AI-Powered Products
-  - Open Source Collaboration
-  - Startup Opportunities
-```
-
----
-
-## GitHub Analytics
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=msmadhav-dev&show_icons=true&count_private=true&hide_border=true&bg_color=0B0A14&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9&ring_color=7C3AED" height="180" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=msmadhav-dev&layout=compact&langs_count=8&hide_border=true&bg_color=0B0A14&title_color=A78BFA&text_color=C9D1D9" height="180" alt="Top Languages" />
-
-</div>
-
----
-
 ## GitHub Streak
 
 <div align="center">
 
 <img src="https://streak-stats.demolab.com?user=msmadhav-dev&hide_border=true&background=0B0A14&stroke=7C3AED&ring=A78BFA&fire=8B5CF6&currStreakLabel=A78BFA&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" alt="GitHub Streak" />
-
-</div>
-
----
-
-## Most Used Languages
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=msmadhav-dev&layout=donut&langs_count=10&hide_border=true&bg_color=0B0A14&title_color=A78BFA&text_color=C9D1D9" height="330" alt="Most Used Languages" />
-
-</div>
-
----
-
-## GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=msmadhav-dev&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="GitHub Trophies" />
 
 </div>
 
