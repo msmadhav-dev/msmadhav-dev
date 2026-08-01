@@ -4,13 +4,16 @@
   ----------------------------------------------------------------------------
   Repo must be named exactly:  msmadhav-dev/msmadhav-dev  (public)
 
-  The header is an animated SVG at assets/madhav.svg — the ASCII types itself
+  The header is an animated SVG at assets/banner.svg — the ASCII types itself
   out row by row. It has to be an SVG: GitHub strips <style> and <script> from
   markdown, so ASCII written directly in the README can never animate.
 
   Regenerate it with:  python3 scripts/generate_banner.py   (stdlib only)
-  After regenerating, bump ?v=1 to ?v=2 on the <img> src below — GitHub's
-  image proxy caches hard and will keep serving the old frame otherwise.
+
+  IMPORTANT — camo.githubusercontent.com caches every README image by URL and
+  will keep serving an old copy after you overwrite the file. Whenever you
+  change the banner, ALSO change the filename (banner.svg -> banner-2.svg) and
+  update the src below. A new path is the only guaranteed cache bust.
 
   TODO before publishing:
     - Add an email badge in the header + Connect section if you want one.
@@ -21,7 +24,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/msmadhav-dev/msmadhav-dev/main/assets/madhav.svg?v=1" width="100%" alt="MADHAV — full stack developer, UI/UX designer, building AI-powered applications" />
+<img src="https://raw.githubusercontent.com/msmadhav-dev/msmadhav-dev/main/assets/banner.svg" width="100%" alt="MADHAV — full stack developer, UI/UX designer, building AI-powered applications" />
 
 <br />
 
